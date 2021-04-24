@@ -1,2 +1,2 @@
-console.log(arrowTitle)
-/* START CODE UNDER THIS LINE */
+const cards = document.querySelectorAll(".the_card")
+
