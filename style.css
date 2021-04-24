@@ -13,3 +13,28 @@ img{
     width:100px;
     height: 100px;
 }
+
+.the_game{
+    width: 650px;
+    height: 650px;
+    display: flex;
+    border: 2px solid whitesmoke;
+    flex-wrap: wrap;
+   
+}
+
+.the_card{
+    border: 2px solid black;
+    width: 25%;
+    height: 33.333%;
+    position: relative;
+}
+
+.front_face,
+.back_face{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    border: 2px solid blueviolet;
+    position: absolute;
+}
