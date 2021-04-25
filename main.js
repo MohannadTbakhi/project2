@@ -17,14 +17,15 @@ function flipCard() {
 
         console.log(firstCard.dataset.img)
         console.log(secondCard.dataset.img)
-
-        /*if(firstCard.dataset.img === secondCard.dataset.img){
+        if(firstCard.dataset.img === secondCard.dataset.img){
             firstCard.removeEventListener("click", flipCard)
             secondCard.removeEventListener("click", flipCard)
         }else{
+            setTimeout(() => {
             firstCard.classList.remove('flip')
             secondCard.classList.remove('flip')
-        }*/
+            }, 1500);
+        }
         
     
 }
