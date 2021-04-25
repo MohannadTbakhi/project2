@@ -10,16 +10,25 @@ function flipCard() {
         hasFlippedCard = true;
         firstCard = this;
 
-        
+    
     }else{
-        hasFlppedCard = false;
+        hasFlippedCard = false;
         secondCard = this;
 
-        console.log({firstCard, secondCard})
-    }
+        console.log(firstCard.dataset.img)
+        console.log(secondCard.dataset.img)
+
+        /*if(firstCard.dataset.img === secondCard.dataset.img){
+            firstCard.removeEventListener("click", flipCard)
+            secondCard.removeEventListener("click", flipCard)
+        }else{
+            firstCard.classList.remove('flip')
+            secondCard.classList.remove('flip')
+        }*/
+        
+    
 }
-
+}
 cards.forEach(card => card.addEventListener("click", flipCard))
-
 
 
